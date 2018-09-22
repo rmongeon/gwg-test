@@ -1,0 +1,117 @@
+
+
+div {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+h1,h3 {
+  font-family: 'Raleway', sans-serif;
+  color:#d7d;
+}
+
+p {
+  width:100%;
+}
+
+section {
+  width:80%;
+  margin: 0px auto;
+  //display:flex;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+}
+
+a:link {
+  color:#25c;
+}
+
+a:visited{
+  color:#d7d;
+}
+
+a:hover{
+  font-e:1.05em;
+  color:#56b;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  text-align: right;
+  width: 69%;
+  display: inline-block;
+  
+}
+
+.logo {
+  // border:solid blue 1px;
+  text-align: left;
+  width: 30%;
+  display: inline-block;
+  min-width:80px;
+  
+}
+
+.logo_left {
+  //max-width:80px;
+  width:100%;
+  max-height:100px;
+  max-width:100px;
+}
+
+.lg_img {
+  max-width: 100%;
+  
+}
+
+.header_line {
+  height: 10px;
+  background-color: rgb(254, 203, 190);
+  color: rgb(254, 203, 190);
+  border-style:none;
+}
+
+.featured {
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100%;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.feat_proj {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.div_img{
+width:100%;
+}
+
+#proj1 {
+
+}
+
+#proj2 {
+
+}
+
+#proj3 {
+
+}
+
