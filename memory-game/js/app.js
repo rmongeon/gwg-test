@@ -10,6 +10,7 @@ var moveCounter = 0;
 var startCard;
 var savedCard;
 var deck = document.querySelector('.deck');
+var reset = document.querySelector('.restart');
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
@@ -17,6 +18,7 @@ var deck = document.querySelector('.deck');
  *   - add each card's HTML to the page
  */
 array = shuffle(array);
+updateCounter(); //clear counter to zero
 const newDeck = document.createElement('ul');
 for (var arrayCard of array) {
 	let newCard = document.createElement('li')
@@ -27,6 +29,9 @@ for (var arrayCard of array) {
 };
 deck.innerHTML = newDeck.innerHTML;
 deck.addEventListener('click', respondToClick);
+reset.addEventListener('click', resetGame);
+
+
 //add icon to card html
 function createIcon() {
 	let newIcon = document.createElement('i');
@@ -81,6 +86,24 @@ function respondToClick(event) {
 		}
 	}
 }
+
+function resetGame() {
+  starContainer = document.querySelector('.stars');
+  moveCounter=0;
+  updateCounter();
+  resetStars(starContainer)
+}
+
+function resetStars(){
+  while(starContainer.childNodes.length < 6){
+    let listElement = document.createElement('li');
+    let starElement = document.createElement('i');
+    starElement.classList.add('fa','fa-star');
+    listElement.appendChild(starElement);
+    starContainer.appendChild(listElement);
+  }
+};
+
 // shows the card  to the user
 function showCard() {
 	startCard.classList.add('open', 'show');
